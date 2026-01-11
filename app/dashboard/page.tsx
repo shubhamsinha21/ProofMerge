@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import { Card } from "@/components/ui/card";
 import { Progress } from "@radix-ui/react-progress";
+import ContributionTable from "@/components/ContributionTable";
 
 const Dashboard = () => {
   return (
@@ -24,6 +25,9 @@ const Dashboard = () => {
           <p className="mb-2 text-sm">Weekly Contribution Progress</p>
           <Progress value={60} />
         </Card>
+
+        {/* Contribution Table */}
+        <ContributionTable/>
       </main>
     </>
   );

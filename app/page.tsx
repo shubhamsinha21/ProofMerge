@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import HomeClient from "@/components/HomeClient";
 
 const Home = () => {
   return (
@@ -32,6 +33,7 @@ const Home = () => {
           <Card className="p-6 text-sm text-muted-foreground">
             Github → ProofMerge → Dashboards
           </Card>
+          <HomeClient />
         </section>
       </main>
     </>

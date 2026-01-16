@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
+import SessionProviderWrapper from "@/components/SessionProviderWrapper";
 
 export const metadata: Metadata = {
   title: "ProoMerge",
-  description: "GProofMerge helps open-source programs fairly measure real contributions — not noise.",
+  description:
+    "GProofMerge helps open-source programs fairly measure real contributions — not noise.",
 };
 
 export default function RootLayout({
@@ -15,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className="bg-background text-foreground">
-        {children}
+        <SessionProviderWrapper>{children}</SessionProviderWrapper>
       </body>
     </html>
   );
